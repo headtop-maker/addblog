@@ -1,0 +1,22 @@
+.wrapper_search {
+    display: grid;
+    justify-content: center;
+    // border: 1px dashed red;
+    display: grid;  
+    grid-template-columns: 1010px ;
+    grid-template-rows: 250px;
+    gap: 10px;
+    padding: 10px;
+  }
+  
+  .search_box{
+    border: 0.5px solid rgb(119, 116, 116);
+    background: linear-gradient(to top left, rgb(202, 219, 221), rgb(255, 255, 255));
+    box-shadow: 0.4em 0.4em 3px rgba(122,122,122,0.5);
+    text-align: center;
+  }
+  
+  .search_box input{
+    width: 340px; 
+  }
+

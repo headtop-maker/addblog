@@ -1,0 +1,72 @@
+.wrapper {
+    padding: 20px;
+    display: grid;
+    justify-content: center;
+    /* border: 1px dashed red; */
+    display: grid;  
+    grid-template-columns: 400px 600px ;
+    grid-template-rows: 300px;
+    gap: 10px;
+  }
+  .item1 {
+    border: 0.5px solid rgb(119, 116, 116);
+    background: linear-gradient(to top left, rgb(202, 219, 221), rgb(255, 255, 255));
+    text-align: center;
+    color:rgb(115, 117, 117);
+    box-shadow: 0.4em 0.4em 3px rgba(122,122,122,0.5);
+  }
+  
+  
+  .item1 img{
+   padding-left: 1%;
+   padding-top: 2%;
+    height: 80%;
+    width: 98%;
+  }
+  
+  .item2 {
+    border: 0.5px solid rgb(119, 116, 116);
+  padding: 5px;
+  background: linear-gradient(to top left, rgb(202, 219, 221), rgb(255, 255, 255));
+  box-shadow: 0.4em 0.4em 5px rgba(122,122,122,0.5);
+  }
+  .item2 h3{
+    color: rgb(75, 70, 70);
+  }
+  
+  .item_box{
+    padding: 5px;
+  }
+  
+  .date{
+    color: rgb(161, 160, 160);
+    font-size: blog;
+  
+  }
+  .author{
+    color: rgb(233, 12, 12); /* Цвет текста */
+    font-weight: 600; /* Жирное начертание */
+  
+  }
+  .like img{
+  
+    height: 40px;
+  
+  }
+
+  .delete{
+    float: right;
+    color: rgb(155, 0, 0); /* Цвет текста */
+    border: 1px solid rgb(2, 2, 2);
+    padding: 2px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    font-weight:bold;
+    cursor: pointer;
+     box-shadow: 0 0 5px rgb(122,122,122);
+  }
+
+  .delete:hover{
+    background-color: rgb(132, 144, 255);
+    color: rgb(255, 255, 255); /* Цвет текста */
+  }

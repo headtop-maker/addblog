@@ -54,7 +54,7 @@ const AddBlogForm: FC = () => {
               setValue(e.currentTarget.value);
               setHide({ display: "none" });
             }} /></p>
-          {/* ...................вставка для наглядности....................................... */}
+
           <div className={`${style.change_box} `} style={hide}>
             {imgSrcOnStore}
           </div>
@@ -92,7 +92,7 @@ export default AddBlogForm;
 
 
 // let imgSrcOnStore = onStoreImg.map((src)=>(<h4>{src.imgSrc}</h4>))
-
+          {/* ...................вставка для наглядности....................................... */}
             {/* <div style={hide} onClick={() => {
               setHide({ display: "none" });
               setValue("https://img.fonwall.ru/o/cw/vecher-more-poberege-doma.jpg"); imgSrc = value;

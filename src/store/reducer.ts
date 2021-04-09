@@ -4,7 +4,10 @@ import { ActionType } from "./actions";
 const initialState: IState = {
   login: "",
   content: [],
-  shortImgSrch: [],
+  shortImgSrch: [
+    { imgSrc: "https://img.fonwall.ru/o/cw/vecher-more-poberege-doma.jpg" },
+    { imgSrc: "https://img3.goodfon.ru/wallpaper/nbig/2/66/lake-nature-wallpaper-3358.jpg" },
+  ],
 };
 
 const reducer = (

@@ -38,7 +38,7 @@ const AddBlogForm: FC = () => {
     setHide({ display: "none" });
     setValue(src.imgSrc); imgSrc = value;
   }} >
-    {src.imgSrc}</div>))
+    {src.imgSrc}</div>));
 
   return (
     <>
@@ -56,17 +56,6 @@ const AddBlogForm: FC = () => {
             }} /></p>
           {/* ...................вставка для наглядности....................................... */}
           <div className={`${style.change_box} `} style={hide}>
-            <div style={hide} onClick={() => {
-              setHide({ display: "none" });
-              setValue("https://img.fonwall.ru/o/cw/vecher-more-poberege-doma.jpg"); imgSrc = value;
-            }} >
-              https://img.fonwall.ru/o/cw/vecher-more-poberege-doma.jpg</div>
-            <div style={hide} onClick={() => {
-              setHide({ display: "none" });
-              setValue("https://img3.goodfon.ru/wallpaper/nbig/2/66/lake-nature-wallpaper-3358.jpg"); imgSrc = value
-            }} >
-              https://img3.goodfon.ru/wallpaper/nbig/2/66/lake-nature-wallpaper-3358.jpg</div>
-            {/* .....................конец вставка для наглядности.......................... */}
             {imgSrcOnStore}
           </div>
 
@@ -100,4 +89,18 @@ const AddBlogForm: FC = () => {
 export default AddBlogForm;
 
 
+
+
 // let imgSrcOnStore = onStoreImg.map((src)=>(<h4>{src.imgSrc}</h4>))
+
+            {/* <div style={hide} onClick={() => {
+              setHide({ display: "none" });
+              setValue("https://img.fonwall.ru/o/cw/vecher-more-poberege-doma.jpg"); imgSrc = value;
+            }} >
+              https://img.fonwall.ru/o/cw/vecher-more-poberege-doma.jpg</div>
+            <div style={hide} onClick={() => {
+              setHide({ display: "none" });
+              setValue("https://img3.goodfon.ru/wallpaper/nbig/2/66/lake-nature-wallpaper-3358.jpg"); imgSrc = value
+            }} >
+              https://img3.goodfon.ru/wallpaper/nbig/2/66/lake-nature-wallpaper-3358.jpg</div> */}
+            {/* .....................конец вставка для наглядности.......................... */}

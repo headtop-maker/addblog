@@ -1,8 +1,10 @@
 import React, { FC, useEffect, useState } from "react";
 import { unmountComponentAtNode } from "react-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { addContentAction, userLoginAction } from "../../store/actions";
-import { getContent, getUserLogin } from "../../store/selectors";
+import { getContent } from "../../store/addImage/selectors";
+// import { addContentAction, userLoginAction } from "../../store/addImage/actions";
+
+// import { getContent, getUserLogin } from "../../store/selectors";
 import Footer from "../Common/Footer";
 import Header from "../Common/Header";
 import AddBlogForm from "./AddBlogForm";
@@ -10,11 +12,12 @@ import BlogForm from "./BlogForm";
 import style from "./BlogPage.module.scss";
 
 
+ 
 const BlogPage: FC = () => {
-
+  
   const onStore = useSelector(getContent);
 
-  let postParamToBlogForm = onStore.map((blogParam) => (
+ const postParamToBlogForm = onStore.map((blogParam) => (
     <BlogForm
       id={blogParam.id}
       imgSrc={blogParam.imgSrc}

@@ -1,0 +1,18 @@
+.wrapper_profile {
+    z-index: 2;
+    display: grid;
+    justify-content: center;
+    // border: 1px dashed red;
+    display: grid;
+    grid-template-columns: 75vh;
+    grid-template-rows: 75vh;
+    gap: 10px;
+    padding: 10px;
+  }
+  
+  .profile{
+    border: 1px solid rgb(78, 77, 77);
+    width: 100%;
+    height: 100%;
+  }
+  

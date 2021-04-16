@@ -1,16 +1,24 @@
-import { IState } from "./types";
+import { IAddImg } from "./types";
 import { ActionType } from "./actions";
 
-const initialState: IState = {
+const initialState: IAddImg = {
   login: "",
   content: [],
-  shortImgSrch: [//начальное состояние
+  shortImgSrch: [
+    //начальное состояние
     { imgSrc: "https://img.fonwall.ru/o/cw/vecher-more-poberege-doma.jpg" },
-    { imgSrc: "https://img3.goodfon.ru/wallpaper/nbig/2/66/lake-nature-wallpaper-3358.jpg" },
+    {
+      imgSrc:
+        "https://i1.wallbox.ru/wallpapers/main/201133/gornoe-ozero-sosny-0e1d0fd.jpg",
+    },
+    {
+      imgSrc:
+        "https://get.wallhere.com/photo/1920x1080-px-nature-sunset-water-1031319.jpg",
+    },
   ],
 };
 
-const reducer = (
+const addImagereducer = (
   state = initialState,
   action: { type: string; payload?: any }
 ) => {
@@ -32,7 +40,7 @@ const reducer = (
         imgSrc: action.payload[0].imgSrc,
         imgText: "Фото",
         blogText: action.payload[0].blogText,
-        author: "Undef",
+        author: action.payload[0].author,
         thisDate: action.payload[0].thisDate,
       };
       return {
@@ -44,5 +52,5 @@ const reducer = (
   }
 };
 
-export default reducer;
+export default addImagereducer;
 // console.log(action.payload[0].imgSrc);
